@@ -22,7 +22,7 @@ label.pack()
 def update_image():
     img_path = random.choice(image_files)
     img = Image.open(img_path)
-    img = img.resize((600, 400))  # Resize if needed
+    img = img.resize((600, 400))  
     photo = ImageTk.PhotoImage(img)
     label.config(image=photo)
     label.image = photo
