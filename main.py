@@ -4,10 +4,10 @@ import os
 import random
 
 # Configuration
-image_folder = "images"  # folder name where images are stored
-delay = 500  # milliseconds
+image_folder = "images" 
+delay = 500  
 
-# Load image paths
+# Loads image paths
 image_files = [os.path.join(image_folder, f) for f in os.listdir(image_folder)
                if f.lower().endswith(('.png', '.jpg', '.jpeg', '.gif'))]
 
